@@ -1,4 +1,5 @@
-#lcdSim Library
+# lcdSim C++ Library
+
 The lcdSim library provides a simple LCD screen simulation for use in console applications. This library allows users to simulate an LCD screen by rendering it to console.
 
 Usage
