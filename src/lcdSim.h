@@ -1,5 +1,5 @@
-#ifndef LCD_SIM_H
-#define LCD_SIM_H
+#ifndef lcdSim_h
+#define lcdSim_h
 
 #include <iostream>
 #include <string>

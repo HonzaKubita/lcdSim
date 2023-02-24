@@ -3,8 +3,6 @@
 #include <string>
 #include <vector>
 
-using namespace std;
-
 lcdSim::lcdSim(int screenWidth, int screenHeight) {
   width = screenWidth;
   height = screenHeight;
@@ -21,34 +19,34 @@ lcdSim::lcdSim(int screenWidth, int screenHeight) {
 void lcdSim::render() {
 
   for(int i = 0; i < width + 2; i++) {
-    cout << "==";
+    std::cout << "=";
   }
 
-  cout << "\n";
+  std::cout << "\n";
 
   for (int i = 0; i < height; i++) {
 
-    cout << "||";
+    std::cout << "|";
 
     for (int j = 0; j < width; j++) {
       if (data[j][i]) {
-        cout << data[j][i];
+        std::cout << data[j][i];
       } else {
-        cout << " ";
+        std::cout << " ";
       }
     }
 
-    cout << "||\n";
+    std::cout << "|\n";
   }
 
   for(int i = 0; i < width + 2; i++) {
-    cout << "==";
+    std::cout << "=";
   }
 
-  cout << "\n";
+  std::cout << "\n";
 }
 
-void lcdSim::print(const string& text) {
+void lcdSim::print(const std::string& text) {
 
   for (int i = 0; i < text.size(); i++) {
     if ((cursorX + i) <= width) {
